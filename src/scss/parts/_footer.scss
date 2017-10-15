@@ -1,0 +1,43 @@
+footer {
+  background-color: $footer;
+  color: $text_on_color_background;
+  font-size: .9rem;
+  padding: 4% 6%;
+}
+
+.more_links {
+  margin-left: 28%;
+
+  a {
+    padding: 0 0 3px 0;
+  }
+}
+
+.subscribe {
+  margin-left: 10%;
+  .input-group {
+
+    input,
+    button {
+      border-radius: 0;
+      font-size: .9rem
+    }
+    input {
+      border: none;
+      border-right: 1px solid rgba(0,0,0, .15);
+    }
+    button {
+      color: #fff;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .more_links,
+  .subscribe {
+    margin-left: 0;
+  }
+  .subscribe {
+    margin-top: 15px;
+  }
+}

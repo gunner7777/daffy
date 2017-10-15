@@ -1,0 +1,37 @@
+.read-all {
+  padding: 5% 5%;
+  
+  p {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+  
+  a.btn {
+    width: 150px;
+    font-size: 1.5rem;
+    border-radius: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .read-all {
+
+    &__text {
+      margin-bottom: 10px!important;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .read-all {
+    padding: 5% 0;
+    
+    p {
+    font-size: 1rem;
+    }
+    
+    a.btn {
+      font-size: 1.2rem;
+    }
+  }
+}

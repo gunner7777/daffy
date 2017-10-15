@@ -1,0 +1,26 @@
+@import './variables/colors';
+@import './variables/buttons';
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
+
+.wrapper {
+  font-family: "Nunito", sans-serif;
+  padding: 0;
+  margin: 0;
+  min-width: 240px;
+
+  a {
+    color: $text_on_color_background;
+  }
+}
+
+.btn-jumbotron {
+  width: 235px;
+  font-size: 1.5rem;
+  border-radius: 50px;
+}
+
+.btn_color_rose {
+  background-color: $button_color; 
+}
+
+@import './parts/app';

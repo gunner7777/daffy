@@ -1,0 +1,156 @@
+.header {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../img/banner2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .nav {
+    margin-right: 40px;
+    a {
+      text-transform: uppercase;
+    }
+  }
+
+  .logo,
+  .nav {
+    margin-top: 30px;
+  }  
+}
+
+.nav-main {
+  -webkit-flex-direction: row !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+
+.logo {
+  margin-left: 40px;
+
+  a {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    font-weight: 600;
+    text-decoration: none;
+    
+    span {
+      width: 50px;
+      height: 200px;
+      background-color: $button_color;
+      border-radius: 100%;
+    }
+  }
+}
+
+.mobile-nav {
+  display: none;
+ 
+  &__hamburger,
+  &__close {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 10px;
+  }
+
+  &__hamburger {
+    font-size: 2rem !important;
+    z-index: 11;
+  }
+  &__close {
+    opacity: 0;
+  }
+}
+
+
+
+.header-text {
+  color: $text_on_color_background;
+  padding: 18vh 20%;
+
+  p {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .nav-main {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header-text {
+    padding: 22vh 20%;
+
+    p {
+      font-size: 2.6rem;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .nav-main {
+    position: absolute;
+    z-index: -1;
+    margin-right: 0!important;
+    margin-top: 0!important;
+    text-align: center;
+    right: 0;
+    height: 100vh;
+    width: 60%;
+    padding-top: 55px;
+    background-color: $materials_bg;
+    -webkit-flex-direction: column !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+
+    .nav-link {
+      color: $mine_shaft!important;
+      padding: 4px 0 14px;
+    }
+  }
+
+  .mobile-nav {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 11;
+
+    &__close {
+      color: $mine_shaft;
+      font-size: 2rem !important;
+    }
+  }
+
+  .header-text {
+    padding: 18vh 20%;
+
+    p {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .btn-jumbotron {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .nav-main {
+    width: 100%;
+    font-size: .875rem;
+  }
+}

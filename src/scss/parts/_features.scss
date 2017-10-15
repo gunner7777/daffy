@@ -1,0 +1,41 @@
+.features {
+  margin: 100px 60px;
+}
+
+.feature {
+  &__title {
+    font-size: 1.3rem;
+  }
+
+  &__icon {
+    display: block;
+    width: 82px;
+    height: 82px;
+    border-radius: 100%;
+    margin: 0 auto 10px;
+    color: $text_on_color_background;
+    font-size: 2rem!important;
+    padding-top: 25px;
+  }
+  .fa-bicycle {
+    background-color: $express;
+  }
+  .fa-flag-o {
+    background-color: $recieve;
+  }
+  .fa-paper-plane-o {
+    background-color: $share;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .features {
+    margin: 50px 60px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .features {
+    margin: 30px 20px;
+  }
+}
